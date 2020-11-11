@@ -19,6 +19,27 @@
 .ui-menu-color-download {
     background-color: #150485;
 }
+/*-------------------------Special paddings/margins/text */
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
 /*-------------------------Heading */
 header {
     margin: 0;
@@ -44,7 +65,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #fceef5;
 }
 
 .title {
@@ -53,7 +74,7 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #fff;
+    color: #fceef5;
 }
 
 .list-inline-item:not(:last-child) {
@@ -64,7 +85,58 @@ header {
     font-size: 0;
 }
 
+#nav {
+    margin: 0;
+}
+
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+.menuitem {
+    height: 120px; /*roughly a third of the profile pic height */
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none; /*gets rid of the underlined link */
+    color: #fceef5;
+    height: 120px;
+}
+
+.menuitem a i {
+    padding-top: 28px;
+    display: block; /* makes the icon in navbar appear in a line of its own */
+    color: #fff;
+    font-size: 26px;
+
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+/*-------------------------Hover.css */
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/*-------------------------Footer */
+
+footer {
+    background-color: #535151;
+    color: #fceef5;
+    min-height: 120px;
+    margin: 0;
 }
