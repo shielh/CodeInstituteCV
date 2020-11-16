@@ -11,7 +11,7 @@
 }
 
 .bg-color-personal-info {
-    background-color: #e7e2e2;
+    background-color: #8a8686;
 }
 
 .bg-color-contact {
@@ -19,7 +19,7 @@
 }
 
 .bg-color-work-history {
-    background-color: #c62a88;
+    background-color: #8a8686;
     }
 .ui-menu-color-home {
     background-color: #0bceaa;
@@ -237,8 +237,12 @@ footer {
     margin-bottom: 20px;
     display: block;
     clear: both;
+    color: #fceef5;
 }
 
+.section-heading {
+    color: #fceef5;
+}
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
