@@ -240,8 +240,12 @@ footer {
     color: #fceef5;
 }
 
-.section-heading {
+.personal-info-heading {
     color: #fceef5;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 .personal-info-item .key,
 .personal-info-item .value {
@@ -272,6 +276,13 @@ footer {
 
 /*-------------------------Skills  */
 
+.my-skills-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: #222020;
+}
 .progress {
     position: relative;
     height: 25px;
