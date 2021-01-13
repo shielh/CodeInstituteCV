@@ -11,8 +11,31 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script type="text/javascript" src="assets/js/github-information.js"></script>
     <title>Rosie</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_iNQ1slEDERYMTh66nWXrA');
+        })();
+    </script>
+    <script>
+var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+ 
+emailjs.send('service_yagc37h', 'codeinstitutecv', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+    </script>
 </head>
 
 <body>
@@ -63,7 +86,7 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form id="contact-form">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
